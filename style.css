@@ -1,0 +1,181 @@
+/* ===== Webサイト全体のスタイル ===== */
+/* html */
+html {
+  height: 100%;
+}
+
+/* body */
+body {
+  font-family: "Bubblegum Sans", sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+.container{
+  font-size: 25px;
+  padding-top: 8px;
+  padding-left: 40px;
+  position: fixed;
+  font-weight: bold;
+}
+
+/* h1見出し */
+h1 {
+  color: black;/* フォントの色 */
+  font-size: 50px;/* フォントの大きさ */
+  font-family: serif;/* フォントの種類 */
+  text-align: center;/* 文字・画像を中央にそろえる */
+  background-color: white;/* 背景画像 */
+  height: 10px;/* 高さ */
+  padding-top: 250px;/* 上がわの余白 */
+  background-repeat: no-repeat;/* 背景のくり返しをやめる */
+  background-position: top center;/* 背景の位置 */
+}
+
+/* ===== ヘッダーのスタイル ===== */
+/* ヘッダーの箱 */
+header {
+  background-color: white;/* 背景画像 */
+  height: 690px;/* 高さ */
+  padding-top: 0px;/* 上がわの余白 */
+}
+
+/* ナビゲーションの箱 */
+nav {
+  background-color: white;
+  background: rgba(255,255,255,0.5);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: fixed;
+  right: 0;
+}
+
+/* リスト全体 */
+nav ul {
+  font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* １つ１つのリスト */
+nav li {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+/* リンク */
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+/* リンクにふれた時 */
+nav a:hover {
+  color: green;
+}
+
+/* h2見出し */
+.title {
+  text-decoration: underline; 
+  font-size: 50px;
+  text-align: center;
+}
+
+Profile{
+  display: flex;
+  align-items: center;
+}
+
+/* 段落 */
+.Profile p {
+  font-size: 20px;
+  background-color: white;
+  padding: 0px;
+  border-radius: 30px;
+  height: 400px;
+  text-align: center;
+  padding-right: 20px;
+  flex: 1;
+}
+
+/* 画像 */
+.Profile img {
+  display: inline-block;
+  vertical-align: middle;
+  display: flex;
+  position: absolute;
+  top: 110%;
+  left: 15%;
+  margin-right: 30px;
+  padding-bottom: 500px;
+  padding-left: 30px;
+}
+
+/* セクション */
+.Interests {
+  font-size: 20px;
+  border-radius: 30px;
+  height: 2500px;
+  padding: 20px;
+  text-align: center;
+}
+
+.Music{
+  font-size: 20px;
+  background-color: white;
+  padding: 0px;
+  border-radius: 30px;
+  height: 600px;
+  text-align: center;
+  padding-right: 20px;
+  flex: 1;
+}
+
+.Travel{
+  font-size: 20px;
+  background-color: white;
+  padding: 0px;
+  border-radius: 30px;
+  height:   700px;
+  text-align: center;
+  padding-right: 20px;
+  flex: 1;
+}
+
+.Reading{
+  font-size: 20px;
+  background-color: white;
+  padding: 0px;
+  border-radius: 30px;
+  height: 700px;
+  text-align: center;
+  padding-right: 20px;
+  flex: 1;
+}
+
+.insta_btn{
+  text-align: right;
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+  position: absolute;
+  left: 45%;
+  top: 538%;
+
+  transform: translate(30%, 30%);
+  height: 100px;
+}
+
+.insta_btn:hover{
+  color: green;
+  transition: .5s;
+  text-align: center;
+  
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+}
