@@ -1,7 +1,17 @@
-$(function($){
-    $('.bg-switcher').bgSwitcher({
-        images:['img/Profile.jpg', 'img/kusunoki.jpg', 'img/europe.jpg'],
-        interval: 5000,
-        loop: true,
-    })
-});
+// JavaScript to handle scroll event and add the fade-in effect
+document.addEventListener('DOMContentLoaded', function() {
+    const fadeInElements = document.querySelectorAll('.fade-in-element');
+  
+    const fadeInOnScroll = () => {
+      fadeInElements.forEach(element => {
+        const elementTop = element.getBoundingClientRect().top;
+        const viewportHeight = window.innerHeight;
+        if (elementTop < viewportHeight - 50) {
+          element.classList.add('fade-in');
+        }
+      });
+    };
+  
+    window.addEventListener('scroll', fadeInOnScroll);
+    fadeInOnScroll(); // Initial check on page load
+  });
